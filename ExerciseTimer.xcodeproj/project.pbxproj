@@ -12,6 +12,8 @@
 		522DF3181E544B3F008BA23F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522DF3161E544B3F008BA23F /* Main.storyboard */; };
 		522DF31A1E544B3F008BA23F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522DF3191E544B3F008BA23F /* Assets.xcassets */; };
 		522DF31D1E544B3F008BA23F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522DF31B1E544B3F008BA23F /* LaunchScreen.storyboard */; };
+		522DF3251E544D9D008BA23F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 522DF3241E544D9D008BA23F /* background.jpg */; };
+		522DF3271E558BFE008BA23F /* timer_or_desk_bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 522DF3261E558BFE008BA23F /* timer_or_desk_bell.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		522DF3191E544B3F008BA23F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522DF31C1E544B3F008BA23F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522DF31E1E544B3F008BA23F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522DF3241E544D9D008BA23F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		522DF3261E558BFE008BA23F /* timer_or_desk_bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = timer_or_desk_bell.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 				522DF3141E544B3F008BA23F /* ViewController.swift */,
 				522DF3161E544B3F008BA23F /* Main.storyboard */,
 				522DF3191E544B3F008BA23F /* Assets.xcassets */,
+				522DF3261E558BFE008BA23F /* timer_or_desk_bell.mp3 */,
+				522DF3241E544D9D008BA23F /* background.jpg */,
 				522DF31B1E544B3F008BA23F /* LaunchScreen.storyboard */,
 				522DF31E1E544B3F008BA23F /* Info.plist */,
 			);
@@ -124,6 +130,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522DF3251E544D9D008BA23F /* background.jpg in Resources */,
+				522DF3271E558BFE008BA23F /* timer_or_desk_bell.mp3 in Resources */,
 				522DF31D1E544B3F008BA23F /* LaunchScreen.storyboard in Resources */,
 				522DF31A1E544B3F008BA23F /* Assets.xcassets in Resources */,
 				522DF3181E544B3F008BA23F /* Main.storyboard in Resources */,
