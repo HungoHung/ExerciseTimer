@@ -67,8 +67,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             print("not able to go here")
         }
         timerLbl.text = workoutMinuteSecondConvert(interval: workoutTime!)
-        startBtnLbl.isEnabled = true
-        startBtnLbl.alpha = 1
+        freshStart()
     }
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
@@ -87,6 +86,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
         workoutSelection(selection: row)
         
     }
@@ -114,16 +114,31 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func resetTimer(){
         isStarted = false
         workoutTime = 0
+        timerLbl.textColor = UIColor.white
         timerLbl.text = workoutMinuteSecondConvert(interval: workoutTime!)
+        startBtnLbl.setTitle("Start", for: .normal)
         startBtnLbl.isEnabled = false
         startBtnLbl.alpha = 0.3
         
     }
+    
+    func freshStart(){
+        isStarted = false
+        startBtnLbl.alpha = 1
+        startBtnLbl.setTitle("Start", for: .normal)
+        startBtnLbl.isEnabled = true
+        timerLbl.textColor = UIColor.white
+        timer.invalidate()
+    }
 
     func decrementWorkouttime(){
         if workoutTime == 0{
-            resetTimer()
+            isStarted = false
             timerLbl.textColor = UIColor.darkGray
+            timerLbl.text = workoutMinuteSecondConvert(interval: workoutTime!)
+            startBtnLbl.isEnabled = false
+            startBtnLbl.alpha = 0.3
+            timer.invalidate()
             alarm()
         }else{
             self.workoutTime! -= 1
@@ -152,5 +167,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         return labelForRow
     }
+    
 }
 
