@@ -141,5 +141,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             print("play error")
         }
     }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        
+        let labelForRow = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.size.width, height: 45.0))
+        labelForRow.text = pickerInfo[row]
+        labelForRow.textAlignment = .center
+        labelForRow.font = UIFont(name: "Helvetica Neue", size: 22)
+        labelForRow.textColor = UIColor.white
+        
+        return labelForRow
+    }
 }
 
